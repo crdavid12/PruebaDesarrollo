@@ -1,0 +1,29 @@
+<div class="modal-dialog">
+    <div class="modal-content">   
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesion</h5>
+        <button  type="button" class="close-login" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="">
+            <input name="usuario" type="text" class="form-control" placeholder="Usuario" id="usuario-login">
+          </div>
+          <div class="form-group">
+            <input  name="contraseña" class="form-control" placeholder="Contraseña" id="contraseña-login">
+          </div>
+          <div class="text-center">
+            <h5 style="color:#ffff">Datos incorrectos</h5>
+          </div>
+          <div class="modal-footer ">
+            <ul class="list-unstyled" >
+              <li class="d-inline">
+                <button type="submit" class="btn btn-dark" (click)="token()">Inicio</button>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>

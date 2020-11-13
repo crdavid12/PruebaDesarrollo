@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <div class="col-10"></div>
+        <div class="col-2 boton">
+            <button type="button " (click)="registro()" class="btn btn-success">Agregar</button>
+        </div>
+    </div>
+
+    <table class="table table-dark table-bordered table-hover table-resposive mt-3 tabla-usuario" 
+          style="text-align: center;"
+          >
+      <thead>
+        <tr>
+          <th scope="col">Fecha</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Producto</th>
+          <th scope="col">Opciones</th>
+          <th scope="col">Check</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of get">
+        <tr>
+          <td>{{item.fecha}}</td>
+          <td>{{item.estado}}</td>
+          <td>{{item.cantidad}}</td>
+          <td>{{item.producto}}</td>
+          <td>
+            <button class="btn btn-success btn-sm" (click)="getId(item.id)">              
+                <i class="far fa-eye"></i>
+            </button>
+            <button class="btn btn-danger btn-sm" (click)="deleteId(item.id)">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+          </td>
+          <td>
+              <input type="checkbox" name="check" id="">
+          </td>
+      </tr>
+        
+    </tbody>
+  </table>
+  <div class="row">
+    <div class="col-10"></div>
+    <div class="col-2 boton">
+        <button type="button " class="btn btn-danger">Borrar Selección</button>
+    </div>
+</div>
+</div>
+

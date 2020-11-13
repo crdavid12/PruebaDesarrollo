@@ -1,0 +1,50 @@
+<div class="container">
+    <form>
+        <!-- Titulo -->
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group textoRegistro">
+                    <label for="">TITULO</label>
+                </div>
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control form-control-lg" name="producto" id="producto">
+            </div>
+        </div>
+
+        <!-- Cantidad -->
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group textoRegistro">
+                    <label for="">CANTIDAD</label>
+                </div>
+            </div>
+            <div class="col-4"> 
+                <input type="text" class="form-control form-control-lg" name="cantidad" id="cantidad">
+            </div>
+        </div>
+
+        <!-- Estado -->
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group textoRegistro">
+                    <label for="">ESTADO</label>
+                </div>
+            </div>
+            <div class="col-4">
+                <select class="form-control form-control-lg" name="estado" id="estado">
+                    <option>ACTIVO</option>
+                    <option>NO ACTIVO</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Boton Registrar -->
+        <div class="row">
+            <div class="col d-flex justify-content-center mt-4">
+                <button type="button " (click)="post()" class="btn btn-success btn-lg">Registrar</button>
+            </div>
+        </div>
+    </form>
+    
+</div>

@@ -1,0 +1,63 @@
+<div class="container">
+    <!-- Titulo -->
+    <div class="row">
+        <div class="col-6">
+            <form>
+                <div class="form-group textoRegistro">
+                    <label for="">TITULO</label>
+                </div>
+            </form>
+        </div>
+        <div class="col-4">
+            <form>
+                <input type="text" class="form-control form-control-lg" name="" id="registroProductTitulo" value={{get.producto}}>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cantidad -->
+    <div class="row">
+        <div class="col-6">
+            <form>
+                <div class="form-group textoRegistro">
+                    <label for="">CANTIDAD</label>
+                </div>
+            </form>
+        </div>
+        <div class="col-4">
+            <form>
+                <input type="text" class="form-control form-control-lg" name="" id="registroProductCantidad" value={{get.cantidad}}>
+            </form>
+        </div>
+    </div>
+
+    <!-- Estado -->
+    <div class="row">
+        <div class="col-6">
+            <form>
+                <div class="form-group textoRegistro">
+                    <label for="">ESTADO</label>
+                </div>
+            </form>
+        </div>
+        <div class="col-4">
+            <select class="form-control form-control-lg" id="registroProductEstado" value={{get.estado}}>
+                <option>ACTIVO</option>
+                <option>NO ACTIVO</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Boton Registrar -->
+    <div class="row">
+        <div class="col d-flex justify-content-around mt-4">
+                <div>
+                    <button type="button " (click)="consultas()" class="btn btn-warning btn-lg">Volver</button>
+                </div>
+                <div>
+                    <button type="button " class="btn btn-success btn-lg" (click)="update()">Registrar</button>
+                </div>
+
+        </div>
+    </div>
+</div>
